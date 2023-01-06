@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --main-color: #0094FF;
+  --main-alt-color: #0095E8;
+  --color-font: #009ef7;
+  --back-button-col: #0095E8;
+  --color-font-tit: #A1A5B7;
+  --back-col-hov: #EFF2F5;
+  --color-back-ele: #F2F4F9;
+  --color-fo-me-si: #5E6278;
+  --side-color: #F5F8FA;
+  --back-side-ele: #F4F6FA;
+  --color-border: #E4E6EF;
+  --color1-icon: #A1A5B7;
+  --color2-icon: #ACDDF9;
+  --color-error-icon: #ffc700;
+  --color-error-but: rgb(241, 65, 83);
+  --main-radius: 0.475rem;
+  --main-transition: .3s;
+  --main-line-height: 1.7;
+  --fa-style-family-classic: "Font Awesome 6 Free";
+}
+
+body {
+  background-color: #ececec;
+  overflow: hidden;
+
+}
+
+.main-box {
+  border: 1px solid #eff2f5;
+  padding: 29.250px;
+  padding-bottom: 0px;
+  margin-bottom: 35px;
+  max-width: 800px;
+  margin: 20px auto;
+  height: calc(100vh - 200px);
+  background-color: #fff;
+  border-radius: 0.475rem;
+  -webkit-border-radius: 0.475rem;
+  -moz-border-radius: 0.475rem;
+  -ms-border-radius: 0.475rem;
+  -o-border-radius: 0.475rem;
+}
+
+.messenger-box {
+  background-color: #ffffff;
+  padding: 10px;
+  transition: right .4s ease .2s;
+  -webkit-transition: right .4s ease .2s;
+  -moz-transition: right .4s ease .2s;
+  -ms-transition: right .4s ease .2s;
+  -o-transition: right .4s ease .2s;
+}
+
+.info-chat {
+  padding: 15px 15px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.body-chat {
+  height: 75%;
+  overflow-y: auto;
+  padding: 15px;
+}
+
+.message-text,
+.message-text-ri {
+  display: flex;
+  flex-direction: column;
+}
+
+.message-text-ri {
+  align-items: flex-end;
+}
+
+.message-text:not(:last-child),
+.message-text-ri:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.message-box,
+.message-box2 {
+  padding: 15px;
+  margin-top: 10px;
+  font-size: 13px;
+  width: fit-content;
+  max-width: 92%;
+  font-weight: 500;
+  line-height: 1.5;
+  color: rgb(0 0 0 / 90%);
+}
+
+.message-box {
+  background-color: #F8F5FF;
+}
+
+.message-box2 {
+  background-color: #F1FAFF;
+}
+
+.message-box a {
+  color: var(--color-font);
+}
+
+.send-chat {
+  padding-top: 10px;
+  padding-bottom: 5px;
+  width: calc(100% - 20px);
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 20px;
+  padding-inline: 10px;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.send-chat input {
+  width: 100%;
+  height: 50px;
+  padding-left: 5px;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--color-fo-me-si);
+  border-radius: 5px;
+  border-top: 1px solid var(--color-border);
+  outline: none;
+}
+
+.send-chat input::placeholder {
+  color: #5E6278;
+  opacity: .5;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.bttm-hr {
+  margin: 20px 50px;
+  width: calc(100% - 100px);
+}
+
+/* =================================== */
+.bo-rad {
+  border-radius: 0.475rem;
+  -webkit-border-radius: 0.475rem;
+  -moz-border-radius: 0.475rem;
+  -ms-border-radius: 0.475rem;
+  -o-border-radius: 0.475rem;
+}
+
+.bo-rad-haf {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+/* =================================== */
+.body-chat::-webkit-scrollbar {
+  background-color: white;
+  width: 5px;
+}
+
+.body-chat::-webkit-scrollbar-thumb {
+  background-color: #E9EDF1;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.body-chat::-webkit-scrollbar {
+  width: 13px;
+}
+
+.body-chat::-webkit-scrollbar-thumb {
+  background-color: #0094FF;
+}
+
+/* ===================================== */
+.button-ok {
+  font-weight: 600;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: 500;
+  outline: none;
+  transition: background-color .3s;
+  -webkit-transition: background-color .3s;
+  -moz-transition: background-color .3s;
+  -ms-transition: background-color .3s;
+  -o-transition: background-color .3s;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.button-ok {
+  background-color: var(--color-font);
+  color: rgb(255 255 255 / 92%);
+}
+
+/* ===================================== */
